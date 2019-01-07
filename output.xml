@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190107 09:41:39.535" generator="Robot 3.1 (Python 2.7.15 on win32)">
+<suite source="C:\eclipse\robot\testrobot" id="s1" name="Testrobot">
+<suite source="C:\eclipse\robot\testrobot\robot1.robot" id="s1-s1" name="Robot1">
+<test id="s1-s1-t1" name="Open WebBrowser">
+<kw name="Open Browser to Search">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190107 09:41:40.317" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.com'.</msg>
+<status status="PASS" endtime="20190107 09:41:46.267" starttime="20190107 09:41:40.317"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190107 09:41:47.592" starttime="20190107 09:41:46.269"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20190107 09:41:47.593" starttime="20190107 09:41:47.593"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>1-OpenBrowser.png</arg>
+</arguments>
+<msg timestamp="20190107 09:41:48.356" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="1-OpenBrowser.png"&gt;&lt;img src="1-OpenBrowser.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190107 09:41:48.357" starttime="20190107 09:41:47.594"></status>
+</kw>
+<status status="PASS" endtime="20190107 09:41:48.357" starttime="20190107 09:41:40.315"></status>
+</kw>
+<kw name="FillSearch">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:q</arg>
+<arg>selenium</arg>
+</arguments>
+<msg timestamp="20190107 09:41:48.362" level="INFO">Typing text 'selenium' into text field 'name:q'.</msg>
+<status status="PASS" endtime="20190107 09:41:50.308" starttime="20190107 09:41:48.361"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>2-FillSearch.png</arg>
+</arguments>
+<msg timestamp="20190107 09:41:51.047" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="2-FillSearch.png"&gt;&lt;img src="2-FillSearch.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190107 09:41:51.048" starttime="20190107 09:41:50.308"></status>
+</kw>
+<status status="PASS" endtime="20190107 09:41:51.048" starttime="20190107 09:41:48.358"></status>
+</kw>
+<kw name="PushSearch">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>name:btnK</arg>
+</arguments>
+<msg timestamp="20190107 09:41:51.051" level="INFO">Clicking button 'name:btnK'.</msg>
+<status status="PASS" endtime="20190107 09:41:54.344" starttime="20190107 09:41:51.049"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>3-ClickSearch.png</arg>
+</arguments>
+<msg timestamp="20190107 09:41:55.103" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="3-ClickSearch.png"&gt;&lt;img src="3-ClickSearch.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190107 09:41:55.105" starttime="20190107 09:41:54.345"></status>
+</kw>
+<status status="PASS" endtime="20190107 09:41:55.107" starttime="20190107 09:41:51.048"></status>
+</kw>
+<kw name="GotoTarget">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Cypress</arg>
+</arguments>
+<status status="PASS" endtime="20190107 09:41:55.648" starttime="20190107 09:41:55.108"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[contains(text(),"Cypress: Web Test Framework")]</arg>
+</arguments>
+<msg timestamp="20190107 09:41:55.649" level="INFO">Clicking element 'xpath://*[contains(text(),"Cypress: Web Test Framework")]'.</msg>
+<status status="PASS" endtime="20190107 09:42:00.456" starttime="20190107 09:41:55.648"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>4-SearchResult.png</arg>
+</arguments>
+<msg timestamp="20190107 09:42:01.242" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="4-SearchResult.png"&gt;&lt;img src="4-SearchResult.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190107 09:42:01.243" starttime="20190107 09:42:00.458"></status>
+</kw>
+<status status="PASS" endtime="20190107 09:42:01.245" starttime="20190107 09:41:55.107"></status>
+</kw>
+<kw name="VerifyTarget">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Development</arg>
+</arguments>
+<status status="PASS" endtime="20190107 09:42:01.778" starttime="20190107 09:42:01.247"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>5-Verify.png</arg>
+</arguments>
+<msg timestamp="20190107 09:42:02.538" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="5-Verify.png"&gt;&lt;img src="5-Verify.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190107 09:42:02.539" starttime="20190107 09:42:01.779"></status>
+</kw>
+<status status="PASS" endtime="20190107 09:42:02.539" starttime="20190107 09:42:01.246"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190107 09:42:06.292" starttime="20190107 09:42:02.539"></status>
+</kw>
+<status status="PASS" endtime="20190107 09:42:06.292" critical="yes" starttime="20190107 09:41:40.304"></status>
+</test>
+<status status="PASS" endtime="20190107 09:42:06.293" starttime="20190107 09:41:39.612"></status>
+</suite>
+<status status="PASS" endtime="20190107 09:42:06.298" starttime="20190107 09:41:39.583"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Testrobot" pass="1">Testrobot</stat>
+<stat fail="0" id="s1-s1" name="Robot1" pass="1">Testrobot.Robot1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
