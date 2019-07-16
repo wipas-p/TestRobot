@@ -15,8 +15,8 @@ Open Browser to Search
     Capture Page Screenshot    1-OpenBrowser.png
     
 FillSearch
-    Input Text  id=j_username  admin
-    Input Text  id=j_password  zk8Q%oHoLe1Z
+    Input Text  id=j_username  xxxxx
+    Input Text  id=j_password  xxxxxx
     Capture Page Screenshot    2-FillLogin.png
 
 PushLogin
