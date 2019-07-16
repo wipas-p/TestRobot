@@ -29,6 +29,10 @@ CLickPolicies
     Click Element  xpath://a[contains(text(),'Policies')]
     Capture Page Screenshot    5-ClickPolicies.png 
 
+CLickTarget1
+    Click Element  xpath://a[contains(text(),'MS Windows Server 2012 R2 DM - CIS v1.1.0')]
+    Capture Page Screenshot  4-target1.png
+    
 ClickLogout
     Click Element  xpath://a[@class='ico-logout']
     Capture Page Screenshot  7-ClickLogout.png
@@ -40,4 +44,5 @@ Open WebBrowser
     FillSearch
     PushLogin
     CLickPolicies
+    CLickTarget1
     [Teardown]    Close Browser
